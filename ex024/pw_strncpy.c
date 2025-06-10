@@ -8,14 +8,14 @@ char *pw_strncpy(char *dest, char *src, unsigned int n){
     if(n == 0){
         return dest;
     }
-    int i = 0;
-    int m = (int)n;
-    while (i < m  && src[i] != '\0'){
+     unsigned int i = 0;
+    //int m = (int)n;
+    while (i < n  && src[i] != '\0'){
         dest[i] = src[i];
         i++;
 
     }
-    while(i < m ){
+    while(i < n ){
         dest[i] = '\0';
         i++;
     }
